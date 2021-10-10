@@ -5,6 +5,7 @@
       "name": "CarTen 100",
       "file": "carten.gpx",
       "distance":"171km",
+      "dst": 171000,
       "info": "Cardiff to Tenby - 100+ miles across South Wales"
     },
     {
@@ -12,12 +13,14 @@
       "name": "Mount Tam",
       "file": "Mt_Tam.gpx",
       "distance":"77km",
+      "dst": 77000,      
       "info": "A gentle 20k across the Golden Gate bridge, then a brutal 20k climb up Mount Tam, and back again."
     },
     {
       "id": 3,
       "name": "Mount Tam - Server",
       "file": "/track/Mt_Tam.gpx",
+      "dst": 77000,
       "distance":"77km",
       "info": "A gentle 20k across the Golden Gate bridge, then a brutal 20k climb up Mount Tam, and back again."
     }
