@@ -17,12 +17,12 @@
       "info": "A gentle 20k across the Golden Gate bridge, then a brutal 20k climb up Mount Tam, and back again."
     },
     {
-      "id": 3,
-      "name": "Mount Tam - Server",
-      "file": "/track/Mt_Tam.gpx",
-      "dst": 77000,
-      "distance":"77km",
-      "info": "A gentle 20k across the Golden Gate bridge, then a brutal 20k climb up Mount Tam, and back again."
+      "id": 4,
+      "name": "Land's End to Boscastle",
+      "file": "/track/Lands_End_to_Boscatle.gpx",
+      "dst": 131710,
+      "distance":"131.7km",
+      "info": "Day 1 of Lands End to Cardiff: 130k across Cornwall, ending up in Boscastle."
     }
   ]
 }
