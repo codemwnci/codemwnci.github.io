@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Learning Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spanish Word Master</h1>
+        
+        <div class="level-selector card">
+            <label for="level-select">Select CEFR Level:</label>
+            <select id="level-select">
+                <option value="top300">Top300 - Beginner</option>
+                <option value="a1">A1 - Beginner</option>
+                <option value="a2">A2 - Elementary</option>
+                <option value="b1">B1 - Intermediate</option>
+                <option value="b2">B2 - Upper Intermediate</option>
+                <option value="c1">C1 - Advanced</option>
+                <option value="c2">C2 - Mastery</option>
+            </select>
+            <button id="load-level">Load Words</button>
+        </div>
+
+        <div id="quiz-container" class="card">
+            <div id="quiz-view">
+                <h2 id="question">Loading...</h2>
+                <div class="input-group">
+                    <input type="text" id="answer-input" placeholder="Type translation..." autocomplete="off">
+                    <button id="submit-answer">Submit</button>
+                    <button id="dont-know" class="secondary">Don't Know</button>
+                </div>
+                <div id="feedback" class="feedback"></div>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card" id="cat-fully-learned">
+                <h3>Fully Learned</h3>
+                <div class="count">0</div>
+                <small>(Last 5 shown)</small>
+                <ul class="word-list"></ul>
+            </div>
+            <div class="stat-card" id="cat-learning">
+                <h3>Learning</h3>
+                <div class="count">0</div>
+                <small>(Last 5 shown)</small>
+                <ul class="word-list"></ul>
+            </div>
+            <div class="stat-card" id="cat-not-learned">
+                <h3>Not Learned</h3>
+                <div class="count">0</div>
+                <small>(Spanish only)</small>
+                <ul class="word-list"></ul>
+            </div>
+        </div>
+
+        <div class="management card">
+            <h3>Add New Word Manually</h3>
+            <div class="input-group">
+                <input type="text" id="new-word" placeholder="Spanish word">
+                <input type="text" id="new-translation" placeholder="English translation">
+                <button id="add-word">Add</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
