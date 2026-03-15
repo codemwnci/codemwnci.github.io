@@ -12,6 +12,7 @@ const newTransInput = document.getElementById('new-translation');
 const addWordBtn = document.getElementById('add-word');
 const levelSelect = document.getElementById('level-select');
 const loadLevelBtn = document.getElementById('load-level');
+const resetBtn = document.getElementById('reset-data');
 
 // Categorization Logic
 function getCategory(word) {
@@ -155,7 +156,19 @@ addWordBtn.addEventListener('click', () => {
 
 loadLevelBtn.addEventListener('click', loadLevel);
 
+resetBtn.addEventListener('click', () => {
+    if (confirm('Are you sure you want to reset all progress and data? This cannot be undone.')) {
+        words = [];
+        localStorage.removeItem('spanishWords');
+        currentWordIndex = -1;
+        updateStats();
+        questionEl.textContent = "Add some words or load a level to start!";
+        feedbackEl.className = 'feedback';
+        feedbackEl.textContent = '';
+    }
+});
+
 // Init
 updateStats();
 if (words.length > 0) nextQuestion();
-else questionEl.textContent = "Select a level to begin!";
+else questionEl.textContent = "Add some words or load a level to start!";
